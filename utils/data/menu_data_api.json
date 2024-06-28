@@ -1,0 +1,732 @@
+[
+    {
+      "id": 1,
+      "name": "Starters",
+      "description": null,
+      "menu_items": [
+        {
+          "id": 1,
+          "name": "Spicy Papadoms",
+          "description": "Crispy and spicy Indian crackers",
+          "price": "0.80"
+        },
+        {
+          "id": 2,
+          "name": "Papadoms",
+          "description": "Classic crispy Indian crackers",
+          "price": "0.80"
+        },
+        {
+          "id": 3,
+          "name": "Onion Bhaji",
+          "description": "Deep-fried onion fritters",
+          "price": "3.90"
+        },
+        {
+          "id": 4,
+          "name": "Meat Samosa",
+          "description": "Savory pastry filled with spiced meat",
+          "price": "3.90"
+        },
+        {
+          "id": 5,
+          "name": "Vegetable Samosa",
+          "description": "Savory pastry filled with spiced vegetables",
+          "price": "3.90"
+        },
+        {
+          "id": 6,
+          "name": "Chicken Tikka",
+          "description": "Boneless chicken pieces marinated and grilled",
+          "price": "5.20"
+        },
+        {
+          "id": 7,
+          "name": "Lamb Tikka",
+          "description": "Juicy grilled lamb pieces",
+          "price": "5.20"
+        },
+        {
+          "id": 8,
+          "name": "Paneer Tikka",
+          "description": "Grilled Indian cottage cheese cubes",
+          "price": "3.90"
+        },
+        {
+          "id": 9,
+          "name": "Salmon Tikka",
+          "description": "Marinated and grilled salmon pieces",
+          "price": "7.20"
+        },
+        {
+          "id": 10,
+          "name": "Tandoori Chicken",
+          "description": "Chicken marinated in yogurt and spices, cooked in a tandoor",
+          "price": "5.20"
+        },
+        {
+          "id": 11,
+          "name": "Sheek Kebab",
+          "description": "Skewered and grilled spiced ground meat",
+          "price": "5.20"
+        },
+        {
+          "id": 12,
+          "name": "Shami Kebab",
+          "description": "Patties of ground meat and lentils",
+          "price": "5.20"
+        },
+        {
+          "id": 13,
+          "name": "Reshmi Kebab",
+          "description": "Silky smooth chicken kebabs",
+          "price": "5.50"
+        },
+        {
+          "id": 14,
+          "name": "Prawn Puree",
+          "description": "Spiced prawns served with a thin bread",
+          "price": "5.20"
+        },
+        {
+          "id": 15,
+          "name": "King Prawn Puree",
+          "description": "King-sized spiced prawns with puree",
+          "price": "6.20"
+        },
+        {
+          "id": 16,
+          "name": "King Prawn Butterfly",
+          "description": "Butterflied and fried king prawn",
+          "price": "6.20"
+        },
+        {
+          "id": 17,
+          "name": "Mixed Kebab",
+          "description": "Assortment of various kebabs",
+          "price": "5.90"
+        },
+        {
+          "id": 18,
+          "name": "Chicken Chat Puree",
+          "description": "Spiced chicken served with puree",
+          "price": "4.90"
+        },
+        {
+          "id": 19,
+          "name": "Prawn Cocktail",
+          "description": "Classic prawn cocktail",
+          "price": "4.50"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Clay Oven Dishes",
+      "description": null,
+      "menu_items": [
+        {
+          "id": 20,
+          "name": "Chicken Tikka",
+          "description": "Marinated chicken pieces grilled in a clay oven",
+          "price": "9.90"
+        },
+        {
+          "id": 21,
+          "name": "Lamb Tikka",
+          "description": "Marinated lamb pieces grilled in a clay oven",
+          "price": "9.90"
+        },
+        {
+          "id": 22,
+          "name": "Paneer Tikka",
+          "description": "Marinated Indian cottage cheese grilled in a clay oven",
+          "price": "7.50"
+        },
+        {
+          "id": 23,
+          "name": "Salmon Tikka",
+          "description": "Marinated salmon fillets grilled in a clay oven",
+          "price": "13.90"
+        },
+        {
+          "id": 24,
+          "name": "Tandoori Chicken (half)",
+          "description": "Half chicken marinated and cooked in a tandoori style",
+          "price": "9.90"
+        },
+        {
+          "id": 25,
+          "name": "Tandoori Chicken (full)",
+          "description": "Full chicken marinated and cooked in a tandoori style",
+          "price": "14.90"
+        },
+        {
+          "id": 26,
+          "name": "Tandoori Mixed Grill",
+          "description": "A mix of tandoori specialities",
+          "price": "13.90"
+        },
+        {
+          "id": 27,
+          "name": "Chicken or Lamb Shashlik",
+          "description": "Grilled chicken or lamb with vegetables",
+          "price": "10.90"
+        },
+        {
+          "id": 28,
+          "name": "Salmon Shashlik",
+          "description": "Grilled salmon with vegetables",
+          "price": "14.90"
+        },
+        {
+          "id": 29,
+          "name": "Paneer Shashlik",
+          "description": "Grilled paneer with vegetables",
+          "price": "8.50"
+        },
+        {
+          "id": 30,
+          "name": "Tandoori King Prawn",
+          "description": "King prawns cooked in a tandoori style",
+          "price": "13.90"
+        },
+        {
+          "id": 31,
+          "name": "Tandoori King Prawn Shashlik",
+          "description": "King prawns grilled with vegetables",
+          "price": "14.90"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "House Special Dishes",
+      "description": null,
+      "menu_items": [
+        {
+          "id": 32,
+          "name": "Chicken Tikka Massala",
+          "description": "Grilled chicken tikka in a creamy tomato sauce",
+          "price": "10.90"
+        },
+        {
+          "id": 33,
+          "name": "Lamb Tikka Massala",
+          "description": "Grilled lamb tikka in a creamy tomato sauce",
+          "price": "10.90"
+        },
+        {
+          "id": 34,
+          "name": "Chicken Passanda",
+          "description": "Chicken cooked in a mild almond sauce",
+          "price": "10.90"
+        },
+        {
+          "id": 35,
+          "name": "Lamb Passanda",
+          "description": "Lamb cooked in a mild almond sauce",
+          "price": "10.90"
+        },
+        {
+          "id": 36,
+          "name": "Butter Chicken",
+          "description": "Tender chicken in a buttery tomato sauce",
+          "price": "10.90"
+        },
+        {
+          "id": 37,
+          "name": "Tandoori King Prawn Massala",
+          "description": "Tandoori king prawns in a creamy tomato sauce",
+          "price": "14.90"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Naz Specials",
+      "description": null,
+      "menu_items": [
+        {
+          "id": 38,
+          "name": "Tandoori Mix Korahi (New)",
+          "description": "A new mix of tandoori items cooked in a korahi style",
+          "price": "12.90"
+        },
+        {
+          "id": 39,
+          "name": "Garlic Chengri (New)",
+          "description": "Cooked with king prawn & prawn madras hot with green chilli & garlic",
+          "price": "14.90"
+        },
+        {
+          "id": 40,
+          "name": "Murgh Massala (New)",
+          "description": "Pieces of tandoori chicken & minced lamb cooked in a masala sauce. Medium strength",
+          "price": "11.90"
+        },
+        {
+          "id": 41,
+          "name": "Sobzi Mix (New)",
+          "description": "Vegetarian dish served with all kinds of vegetables, medium spiced. Served on a karahi",
+          "price": "10.90"
+        },
+        {
+          "id": 42,
+          "name": "Tandoori Mix Massala",
+          "description": "A delicious mix of tandoori items in a massala sauce",
+          "price": "12.90"
+        },
+        {
+          "id": 43,
+          "name": "Zinga Balti",
+          "description": "Seafood mix medium spice with fresh herbs & lemon",
+          "price": "14.90"
+        },
+        {
+          "id": 44,
+          "name": "Sweet & Sour Chicken Tikka",
+          "description": "A unique sweet and sour twist to the classic chicken tikka",
+          "price": "11.90"
+        },
+        {
+          "id": 45,
+          "name": "Salmon Jalfrezi",
+          "description": "Spicy and flavorful salmon jalfrezi",
+          "price": "14.90"
+        },
+        {
+          "id": 46,
+          "name": "Salmon Korahi",
+          "description": "Salmon cooked in a traditional korahi style",
+          "price": "14.90"
+        },
+        {
+          "id": 47,
+          "name": "Tandoori King Prawn Korahi",
+          "description": "King prawns cooked in a flavorful korahi method",
+          "price": "14.90"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Biriyani Dishes",
+      "description": null,
+      "menu_items": [
+        {
+          "id": 48,
+          "name": "Chicken / Lamb Biryani",
+          "description": "Flavorful biryani with chicken or lamb",
+          "price": "10.90"
+        },
+        {
+          "id": 49,
+          "name": "Chicken / Lamb Tikka Biryani",
+          "description": "Biryani with spiced chicken or lamb tikka",
+          "price": "11.90"
+        },
+        {
+          "id": 50,
+          "name": "Tandoori Chicken Biryani",
+          "description": "Biryani with tandoori chicken pieces",
+          "price": "11.90"
+        },
+        {
+          "id": 51,
+          "name": "Prawn Biryani",
+          "description": "Delicious biryani with prawns",
+          "price": "12.90"
+        },
+        {
+          "id": 52,
+          "name": "King Prawn Biryani",
+          "description": "Biryani made with king prawns",
+          "price": "13.90"
+        },
+        {
+          "id": 53,
+          "name": "Vegetable Biryani",
+          "description": "Vegetarian biryani with mixed vegetables",
+          "price": "9.90"
+        },
+        {
+          "id": 54,
+          "name": "Mushroom Biryani",
+          "description": "Biryani with fresh mushrooms",
+          "price": "9.90"
+        },
+        {
+          "id": 55,
+          "name": "Tandoori King Prawn Biryani",
+          "description": "Biryani with tandoori king prawns",
+          "price": "14.90"
+        },
+        {
+          "id": 56,
+          "name": "Mixed Biryani",
+          "description": "A mix of various meats and vegetables in biryani",
+          "price": "14.90"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Balti Dishes",
+      "description": null,
+      "menu_items": [
+        {
+          "id": 57,
+          "name": "Balti Chicken / Lamb Tikka Massala",
+          "description": "Balti dish with chicken or lamb tikka in massala sauce",
+          "price": "11.90"
+        },
+        {
+          "id": 58,
+          "name": "Balti Chicken Tikka Jalfrezi",
+          "description": "Spicy balti dish with chicken tikka jalfrezi",
+          "price": "11.90"
+        },
+        {
+          "id": 59,
+          "name": "Balti King Prawn Massala",
+          "description": "Balti dish with king prawns in massala sauce",
+          "price": "14.90"
+        },
+        {
+          "id": 60,
+          "name": "Balti King Prawn Sag",
+          "description": "King prawns cooked with spinach in balti style",
+          "price": "14.90"
+        },
+        {
+          "id": 61,
+          "name": "Balti Mixed Vegetable",
+          "description": "Assorted vegetables cooked in balti style",
+          "price": "10.90"
+        },
+        {
+          "id": 62,
+          "name": "Balti Chicken / Lamb",
+          "description": "Traditional balti dish with chicken or lamb",
+          "price": "10.90"
+        },
+        {
+          "id": 63,
+          "name": "Balti Chicken / Lamb Tikka",
+          "description": "Balti dish with chicken or lamb tikka",
+          "price": "11.90"
+        },
+        {
+          "id": 64,
+          "name": "Balti Prawn",
+          "description": "Balti dish with prawns",
+          "price": "12.90"
+        },
+        {
+          "id": 65,
+          "name": "Balti King Prawn",
+          "description": "Rich and flavorful balti dish with king prawns",
+          "price": "14.90"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Side Dishes",
+      "description": null,
+      "menu_items": [
+        {
+          "id": 66,
+          "name": "Mix Vegetable Curry",
+          "description": "Mixed vegetables cooked in a curry sauce",
+          "price": "3.90"
+        },
+        {
+          "id": 67,
+          "name": "Mix Dry Vegetables",
+          "description": "Assorted dry-cooked vegetables",
+          "price": "3.90"
+        },
+        {
+          "id": 68,
+          "name": "Mushroom Bhaji",
+          "description": "Sautéed mushrooms with spices",
+          "price": "3.90"
+        },
+        {
+          "id": 69,
+          "name": "Cauliflower Bhaji",
+          "description": "Spiced cauliflower dish",
+          "price": "3.90"
+        },
+        {
+          "id": 70,
+          "name": "Bindi Bhaji",
+          "description": "Okra cooked with a blend of spices",
+          "price": "3.90"
+        },
+        {
+          "id": 71,
+          "name": "Brinjal Bhaji",
+          "description": "Spiced eggplant dish",
+          "price": "3.90"
+        },
+        {
+          "id": 72,
+          "name": "Aloo Gobi",
+          "description": "Cauliflower and potatoes cooked with spices",
+          "price": "3.90"
+        },
+        {
+          "id": 73,
+          "name": "Sag Bhaji",
+          "description": "Spinach cooked with spices",
+          "price": "3.90"
+        },
+        {
+          "id": 74,
+          "name": "Sag Aloo",
+          "description": "Spinach and potatoes cooked together",
+          "price": "3.90"
+        },
+        {
+          "id": 75,
+          "name": "Bombay Aloo",
+          "description": "Potatoes cooked in a spicy sauce",
+          "price": "3.90"
+        },
+        {
+          "id": 76,
+          "name": "Tarka Dall",
+          "description": "Lentils cooked with spices and a tadka of onion and garlic",
+          "price": "3.90"
+        },
+        {
+          "id": 77,
+          "name": "Dall Massala",
+          "description": "Lentils cooked in a massala sauce",
+          "price": "3.90"
+        },
+        {
+          "id": 78,
+          "name": "Chana Massala",
+          "description": "Chickpeas cooked in a massala sauce",
+          "price": "3.90"
+        },
+        {
+          "id": 79,
+          "name": "Motor Paneer",
+          "description": "Peas with Indian cheese/mild cheddar",
+          "price": "4.20"
+        },
+        {
+          "id": 80,
+          "name": "Sag Paneer",
+          "description": "Spinach with Indian cheese/mild cheddar",
+          "price": "4.20"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Rice Dishes",
+      "description": null,
+      "menu_items": [
+        {
+          "id": 81,
+          "name": "Plain Rice",
+          "description": "Simple steamed rice",
+          "price": "2.90"
+        },
+        {
+          "id": 82,
+          "name": "Pilau Rice",
+          "description": "Flavored basmati rice",
+          "price": "3.30"
+        },
+        {
+          "id": 83,
+          "name": "Special Rice",
+          "description": "Rice mixed with assorted ingredients",
+          "price": "3.90"
+        },
+        {
+          "id": 84,
+          "name": "Mushroom Rice",
+          "description": "Rice cooked with mushrooms",
+          "price": "3.90"
+        },
+        {
+          "id": 85,
+          "name": "Coconut Rice",
+          "description": "Rice flavored with coconut",
+          "price": "3.90"
+        },
+        {
+          "id": 86,
+          "name": "Lemon Rice",
+          "description": "Rice with a tangy lemon flavor",
+          "price": "3.90"
+        },
+        {
+          "id": 87,
+          "name": "Vegetable Rice",
+          "description": "Rice cooked with mixed vegetables",
+          "price": "3.90"
+        },
+        {
+          "id": 88,
+          "name": "Egg Rice",
+          "description": "Rice cooked with eggs",
+          "price": "3.90"
+        },
+        {
+          "id": 89,
+          "name": "Keema Rice",
+          "description": "Rice cooked with minced meat",
+          "price": "3.90"
+        },
+        {
+          "id": 90,
+          "name": "Mint Rice",
+          "description": "Rice flavored with mint",
+          "price": "3.90"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Indian Breads",
+      "description": null,
+      "menu_items": [
+        {
+          "id": 91,
+          "name": "Nan",
+          "description": "Traditional Indian bread",
+          "price": "2.90"
+        },
+        {
+          "id": 92,
+          "name": "Keema Nan",
+          "description": "Nan stuffed with minced meat",
+          "price": "3.30"
+        },
+        {
+          "id": 93,
+          "name": "Peshwari Nan",
+          "description": "Nan filled with a sweet nut mixture",
+          "price": "3.30"
+        },
+        {
+          "id": 94,
+          "name": "Vegetable Nan",
+          "description": "Nan stuffed with mixed vegetables",
+          "price": "3.30"
+        },
+        {
+          "id": 95,
+          "name": "Garlic Nan",
+          "description": "Nan flavored with garlic",
+          "price": "3.30"
+        },
+        {
+          "id": 96,
+          "name": "Onion Nan",
+          "description": "Nan with onion filling",
+          "price": "3.30"
+        },
+        {
+          "id": 97,
+          "name": "Cheese Nan",
+          "description": "Nan stuffed with cheese",
+          "price": "3.90"
+        },
+        {
+          "id": 98,
+          "name": "Paratha",
+          "description": "Flaky, layered flatbread",
+          "price": "3.20"
+        },
+        {
+          "id": 99,
+          "name": "Stuffed Paratha",
+          "description": "Paratha stuffed with fillings",
+          "price": "4.20"
+        },
+        {
+          "id": 100,
+          "name": "Chapathi",
+          "description": "Thin, unleavened flatbread",
+          "price": "1.90"
+        },
+        {
+          "id": 101,
+          "name": "Puree",
+          "description": "Deep-fried, puffed bread",
+          "price": "1.90"
+        },
+        {
+          "id": 102,
+          "name": "Raitha",
+          "description": "Yogurt mixed with onion, cucumber, or other vegetables",
+          "price": "3.20"
+        },
+        {
+          "id": 103,
+          "name": "Chutney (each)",
+          "description": "Variety of flavorful chutneys",
+          "price": "0.80"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "English Dishes",
+      "description": null,
+      "menu_items": [
+        {
+          "id": 104,
+          "name": "Chicken Nuggets & Chips",
+          "description": "Crispy chicken nuggets served with chips",
+          "price": "8.50"
+        },
+        {
+          "id": 105,
+          "name": "Fish Fingers & Chips",
+          "description": "Golden fish fingers served with chips",
+          "price": "8.50"
+        },
+        {
+          "id": 106,
+          "name": "Chicken Omelette & Chips",
+          "description": "Chicken omelette served with chips",
+          "price": "8.50"
+        },
+        {
+          "id": 107,
+          "name": "Mushroom Omelette & Chips",
+          "description": "Mushroom omelette served with chips",
+          "price": "8.50"
+        },
+        {
+          "id": 108,
+          "name": "Plain Omelette & Chips",
+          "description": "Plain omelette served with chips",
+          "price": "7.50"
+        },
+        {
+          "id": 109,
+          "name": "Cheesy Chips",
+          "description": "Chips topped with melted cheese",
+          "price": "4.20"
+        },
+        {
+          "id": 110,
+          "name": "Chips",
+          "description": "Classic fried chips",
+          "price": "3.20"
+        }
+      ]
+    }
+  ]
