@@ -5,7 +5,7 @@ type Contact = {
 }
 
 async function getContactData() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact-details`)
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/contact-details`)
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
@@ -18,10 +18,14 @@ async function getContactData() {
 
 type OpeningHours = {
   id: number;
-  
+  day: string;
+  openingTime: string;
+  closingTime: string;
+
 }
+
 const getOpeningHours = async () => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/opening-hours`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/opening-hours`);
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
@@ -34,6 +38,8 @@ const getOpeningHours = async () => {
 const Contact = async () => {
   const data: Contact[] = await getContactData()
   // console.log('contact details', data)
+
+  data.sort()
 
   let email = '';
   let phone = '';
@@ -49,7 +55,7 @@ const Contact = async () => {
     }
   });
 
-  const openingHours = await getOpeningHours()
+  const openingHours: OpeningHours[] = await getOpeningHours()
 
   return (
     <div id="contact" className="grid lg:grid-cols-2 lg:mb-20">
@@ -108,34 +114,16 @@ const Contact = async () => {
           <h2 className="mt-8 mb-2 text-lg">Opening Hours</h2>
 
           <div>
-            <p className="flex justify-between gap-3">
-              <span>Mon:</span>
-              <span>5pm - 10pm</span>
-            </p>
-            <p className="flex justify-between gap-3">
-              <span>Tues:</span>
-              <span>5pm - 10pm</span>
-            </p>
-            <p className="flex justify-between gap-3">
-              <span>Weds:</span>
-              <span>5pm - 10pm</span>
-            </p>
-            <p className="flex justify-between gap-3">
-              <span>Thurs:</span>
-              <span>5pm - 10pm</span>
-            </p>
-            <p className="flex justify-between gap-3">
-              <span>Fri:</span>
-              <span>5pm - 10pm</span>
-            </p>
-            <p className="flex justify-between gap-3">
-              <span>Sat:</span>
-              <span>5pm - 10pm</span>
-            </p>
-            <p className="flex justify-between gap-3">
-              <span>Sun:</span>
-              <span>5pm - 10pm</span>
-            </p>
+            {
+              openingHours.map((doc: OpeningHours) => {
+                return (
+                  <p className="flex justify-between gap-3">
+                    <span>{doc.day}:</span>
+                    <span>{doc.openingTime} - {doc.closingTime}</span>
+                  </p>
+                )
+              })
+            }
           </div>
         </div>
 

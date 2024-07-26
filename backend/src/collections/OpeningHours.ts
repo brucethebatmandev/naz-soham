@@ -2,7 +2,7 @@ import { CollectionConfig } from "payload/types";
 
 export const OpeningHours: CollectionConfig = {
     slug: 'opening-hours',
-
+    defaultSort: 'id',
     access: {
         read: () => true,
     },
