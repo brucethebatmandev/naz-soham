@@ -1,15 +1,20 @@
 import { Block } from "payload/types";
 
-export const TwoColumn: Block = {
-    slug: 'twoColumn',
+export const Content: Block = {
+    slug: 'content',
     labels: {
-        singular: 'Two Column Block',
-        plural: 'Two Column Blocks'
+        singular: 'Content Block',
+        plural: 'Content Blocks'
     },
     fields: [
         {
             name: 'heading',
             label: 'Heading',
+            type: 'text',
+        },
+        {
+            name: 'subheading',
+            label: 'Subheading',
             type: 'text',
         },
         {
@@ -25,15 +30,16 @@ export const TwoColumn: Block = {
         },
         {
             name: 'direction',
-            label: 'Direction',
+            label: 'Content Direction',
             type: 'select',
+            required: true,
             options: [
                 {
-                    label: 'Default',
+                    label: 'Text Left, Image Right',
                     value: 'default'
                 },
                 {
-                    label: 'Reverse',
+                    label: 'Image Left, Text Right',
                     value: 'reverse'
                 }
             ]

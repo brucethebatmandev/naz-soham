@@ -1,38 +1,24 @@
-import { Hero } from '../blocks/Hero'
-import { TwoColumn } from  '../blocks/TwoColumn'
+import { Content } from  '../blocks/GalleryContent'
 import { CollectionConfig } from 'payload/types'
 
 
 export const Pages: CollectionConfig = {        
-    slug: 'pages',
+    slug: 'gallery-content',
     labels: {
-        singular: 'Page',
-        plural: 'Pages'
+        singular: 'Gallery Content',
+        plural: 'Gallery Content'
     },
     access: {
         read: () => true,
     },
     fields: [
         {
-            name: 'name',
-            label: 'Name',
-            type: 'text',
-            required: true,
-        },
-        {
-            name: 'slug',
-            label: 'Slug',
-            type: 'text',
-            required: true,
-        },
-        {
-            name: 'layout',
-            label: 'Layout',
+            name: 'section',
+            label: 'Section',
             type: 'blocks',
+            maxRows: 2,
             blocks: [
-                Hero,
-                TwoColumn,
-                
+                Content,
             ]
         }
     ]
