@@ -1,7 +1,7 @@
 import { CollectionConfig } from "payload/types";
 
-export const Contact: CollectionConfig = {
-    slug: 'contact',
+export const ContactDetails: CollectionConfig = {
+    slug: 'contact-details',
     access: {
         read: () => true,
     },
