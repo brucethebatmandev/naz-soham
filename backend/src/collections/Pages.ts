@@ -1,5 +1,5 @@
 import { Hero } from '../blocks/Hero'
-import { TwoColumn } from  '../blocks/TwoColumn' //'@/blocks/TwoColumn'
+import { TwoColumn } from  '../blocks/TwoColumn'
 import { CollectionConfig } from 'payload/types'
 
 

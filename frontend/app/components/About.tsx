@@ -63,7 +63,7 @@ const About = () => {
           className="h-full w-full max-w-lg md:max-w-xl lg:max-w-md xl:max-w-xl object-cover rounded-md shadow-xl"
           src='/img/drinks-pic-1.jpg'
           alt=""
-        ></img>
+        />
 
         <div className="flex flex-col items-center justify-center gap-8 text-center max-w-xl lg:max-w-md">
           <h1 className="text-4xl">Gallery</h1>
