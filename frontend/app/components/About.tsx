@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="px-14 mt-24 flex flex-col gap-[12rem] items-center mb-20">
+    <div id="about" className="px-14 mt-24 flex flex-col gap-[12rem] items-center mb-20">
       <div className="flex flex-col items-center justify-center gap-8 text-center max-w-3xl">
         <h1 className="text-md uppercase tracking-widest">
           Naz Soham Indian Restaurant
@@ -28,7 +28,7 @@ const About = () => {
         </a>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-14 lg:gap-28">
+      <div id="gallery" className="flex flex-col lg:flex-row items-center justify-center gap-14 lg:gap-28">
         <img
           className="h-full w-full max-w-lg md:max-w-xl lg:max-w-md xl:max-w-xl object-cover rounded-md shadow-xl"
           src='/img/food-pic-1.jpg'

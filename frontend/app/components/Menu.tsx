@@ -52,13 +52,14 @@ const Menu: React.FC<MenuProps> = ({ menuList }) => {
   };
 
   return (
-    <div className="my-24 flex flex-col justify-center items-center">
+    <div id="menu" className="my-24 flex flex-col justify-center items-center">
 
       <h1 className="text-6xl">Menu</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 justify-center">
 
         {menuList.map((category, index) => (
+
           <div key={category.id} className="flex flex-col p-10 w-full max-w-xl">
 
             <div className="flex items-baseline justify-between">
@@ -96,8 +97,9 @@ const Menu: React.FC<MenuProps> = ({ menuList }) => {
                 ))}
               </div>
             )}
-
+            
           </div>
+
         ))}
 
       </div>

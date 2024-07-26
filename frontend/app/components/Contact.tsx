@@ -13,7 +13,7 @@ const Contact = () => {
     //   }
     //   ```
 
-    <div className="grid lg:grid-cols-2 lg:mb-20">
+    <div id="contact" className="grid lg:grid-cols-2 lg:mb-20">
 
       {/* Phone, Email, Address & Opening Hours*/}
       <div className="grid gap-4 justify-center items-center bg-[#fafaed] h-full rounded-md tracking-wide">

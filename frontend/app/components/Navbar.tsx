@@ -37,10 +37,10 @@ const Navbar = () => {
       {/* Render navigation links always */}
       <nav className={`${mobilenavOpen ? 'block' : 'hidden'} md:block bg-[#fafaed] h-screen w-full md:h-auto md:w-auto top-0 left-0 absolute md:relative z-[-1]`}>
         <ul className="text-slate-600 uppercase semibold tracking-widest text-3xl md:text-sm flex items-center navitems flex-col md:flex-row gap-8 justify-center h-full -translate-y-10 md:translate-y-0">
-          <li><a className="hover:underline hover:decoration-1 hover:text-slate-900" href="#">About</a></li>
-          <li><a className="hover:underline hover:decoration-1 hover:text-slate-900" href="#">Gallery</a></li>
-          <li><a className="hover:underline hover:decoration-1 hover:text-slate-900" href="#">Menu</a></li>
-          <li><a className="hover:underline hover:decoration-1 hover:text-slate-900" href="#">Contact</a></li>
+          <li><a className="hover:underline hover:decoration-1 hover:text-slate-900" href="#about">About</a></li>
+          <li><a className="hover:underline hover:decoration-1 hover:text-slate-900" href="#gallery">Gallery</a></li>
+          <li><a className="hover:underline hover:decoration-1 hover:text-slate-900" href="#menu">Menu</a></li>
+          <li><a className="hover:underline hover:decoration-1 hover:text-slate-900" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
