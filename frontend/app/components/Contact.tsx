@@ -144,7 +144,7 @@ const Contact = () => {
                 <label className="block text-sm leading-6">Message</label>
                 <div className="mt-2.5">
                   <textarea name="message" id="message"
-                    // rows="6"
+                    rows={3}
                     className="block w-full border-1 px-3.5 py-2 text-gray-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"></textarea>
                 </div>
               </div>
@@ -153,22 +153,19 @@ const Contact = () => {
 
             <div className="mt-10">
               <button type="submit"
-                className="block w-full px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 border-double border-4 border-slate-700 hover:border-slate-600">Send
-                Message</button>
+                className="block w-full px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 border-double border-4 border-slate-700 hover:border-slate-600"
+              >
+                Send Message
+              </button>
             </div>
           </form>
 
+
         </div>
-
-
 
       </div>
 
-
     </div>
-
-
-
   )
 }
 

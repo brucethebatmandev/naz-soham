@@ -15,13 +15,6 @@ export const Category: CollectionConfig = {
             type: 'text',
             required: true,        
         },
-        // {
-        //     name: 'items',
-        //     type: 'relationship',
-        //     required: true,
-        //     hasMany: true,
-        //     relationTo: 'item',     
-        // },
     ],
     admin: {
         useAsTitle: 'name'

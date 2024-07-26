@@ -10,6 +10,8 @@ import { Category } from './collections/MenuCategory'
 import { Item } from './collections/MenuItem'
 import { Pages } from './collections/Pages'
 import { Media } from './collections/Media'
+import { Contact } from './collections/Contact'
+import { OpeningHours } from './collections/OpeningHours'
 
 export default buildConfig({
   admin: {
@@ -23,7 +25,8 @@ export default buildConfig({
     Item,
     Pages,
     Media,
-
+    Contact,
+    OpeningHours,
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
