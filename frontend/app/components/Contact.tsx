@@ -4,7 +4,7 @@ type Contact = {
   value: string;
 }
 
-async function getContactData() {
+const getContactData = async () => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/contact-details`)
 
   if (!res.ok) {
@@ -14,7 +14,6 @@ async function getContactData() {
   const data = await res.json()
   return data.docs
 }
-
 
 type OpeningHours = {
   id: number;
@@ -37,9 +36,6 @@ const getOpeningHours = async () => {
 
 const Contact = async () => {
   const data: Contact[] = await getContactData()
-  // console.log('contact details', data)
-
-  data.sort()
 
   let email = '';
   let phone = '';
