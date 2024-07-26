@@ -22,13 +22,13 @@ export default buildConfig({
   editor: slateEditor({}),
   collections: [
     Users,
+    Pages,
     Category,
     Item,
-    Pages,
-    Media,
     ContactDetails,
     ContactMessage,
     OpeningHours,
+    Media,
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
@@ -42,5 +42,12 @@ export default buildConfig({
       connectionString: process.env.DATABASE_URI,
     },
   }),
-  // cors: ['*']
+  cors: [
+    // "http://localhost:3000",
+    process.env.FRONTEND_URL,
+  ],
+  csrf: [
+    // "http://localhost:3000",
+    process.env.FRONTEND_URL,
+  ],
 })

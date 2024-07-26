@@ -2,6 +2,11 @@ import { CollectionConfig } from "payload/types";
 
 export const ContactMessage: CollectionConfig = {
     slug: 'contact-message',
+    access: {
+        create: () => true,
+        update: () => false,
+        delete: () => false,
+    },
     fields: [
         {
             name: 'firstName',
