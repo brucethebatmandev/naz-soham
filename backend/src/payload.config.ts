@@ -43,11 +43,11 @@ export default buildConfig({
     },
   }),
   cors: [
-    // "http://localhost:3000",
+    `http://localhost:${process.env.BACKEND_PORT}`,
     process.env.FRONTEND_URL,
   ],
   csrf: [
-    // "http://localhost:3000",
     process.env.FRONTEND_URL,
+    `http://localhost:${process.env.BACKEND_PORT}`,
   ],
 })

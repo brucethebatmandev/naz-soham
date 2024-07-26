@@ -2,12 +2,13 @@ import { CollectionConfig } from "payload/types";
 
 export const OpeningHours: CollectionConfig = {
     slug: 'opening-hours',
+
     access: {
         read: () => true,
     },
     fields: [
         {
-            name: 'type',
+            name: 'day',
             type: 'select',
             required: true,
             hasMany: false,

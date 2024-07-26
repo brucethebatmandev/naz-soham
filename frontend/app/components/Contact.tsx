@@ -1,15 +1,27 @@
-
-
-
 type Contact = {
   id: number;
   type: string;
   value: string;
 }
 
-
 async function getContactData() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact-details`)
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
+  }
+
+  const data = await res.json()
+  return data.docs
+}
+
+
+type OpeningHours = {
+  id: number;
+  
+}
+const getOpeningHours = async () => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/opening-hours`);
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
@@ -36,6 +48,8 @@ const Contact = async () => {
       address = contact.value;
     }
   });
+
+  const openingHours = await getOpeningHours()
 
   return (
     <div id="contact" className="grid lg:grid-cols-2 lg:mb-20">
