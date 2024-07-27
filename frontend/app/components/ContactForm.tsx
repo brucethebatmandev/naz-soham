@@ -1,34 +1,45 @@
-import { FieldError, useForm, UseFormRegister } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { zodResolver } from '@hookform/resolvers/zod'
+import { z } from "zod";
 
-export type FormData = {
-  firstName: string;
-  lastName: string;
-  email: number;
-  message: string;
-};
 
-export type FormFieldProps = {
-  type: string;
-  placeholder: string;
-  name: ValidFieldNames;
-  register: UseFormRegister<FormData>;
-  error: FieldError | undefined;
-  valueAsNumber?: boolean;
-};
+const FormSchema = z.object({
+  firstName: z.string(),
+  lastName: z.string(),
+  email: z.string().email({ message: 'Invalid email address' }),
+  message: z.string(),
+});
 
-export type ValidFieldNames = "firstName" | "lastName" | "email" | "message";
+type Inputs = z.infer<typeof FormSchema>
+// type FieldName = keyof Inputs
+
 
 const ContactForm = () => {
-  const { register, handleSubmit, formState: { errors }, setError } = useForm<FormData>();
+
+  const { register, handleSubmit, formState: { errors } } = useForm<Inputs>({ resolver: zodResolver(FormSchema) });
+
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    await FormSchema.safeParseAsync(data);
+    const formData = new FormData()
+    formData.append('firstName', data.firstName);
+    formData.append('lastName', data.lastName);
+    formData.append('email', data.email);
+    formData.append('message', data.message);
+    // await submitContatMessage(formData)
+  }
 
   return (
     <>
-      <form action="#" method="POST">
+      <form
+        // action="#" method="POST"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2 text-gray-900">
           <div>
             <label className="block text-sm leading-6">First name</label>
             <div className="mt-2.5">
               <input
+                {...register('firstName')}
                 type="text"
                 name="first-name"
                 id="first-name"
@@ -42,6 +53,7 @@ const ContactForm = () => {
             <label className="block text-sm leading-6">Last name</label>
             <div className="mt-2.5">
               <input
+                {...register('lastName')}
                 type="text"
                 name="last-name"
                 id="last-name"
@@ -55,6 +67,7 @@ const ContactForm = () => {
             <label className="block text-sm leading-6">Email</label>
             <div className="mt-2.5">
               <input
+                {...register('email')}
                 type="email"
                 name="email"
                 id="email"
@@ -68,6 +81,7 @@ const ContactForm = () => {
             <label className="block text-sm leading-6">Message</label>
             <div className="mt-2.5">
               <textarea
+                {...register('message')}
                 name="message"
                 id="message"
                 rows={3}
@@ -89,3 +103,5 @@ const ContactForm = () => {
     </>
   );
 };
+
+export default ContactForm
